@@ -101,7 +101,7 @@ class Downloader(
                                 val n = input.read(buf)
                                 if (n == -1) break
                                 raf.write(buf, 0, n)
-                                downloaded[i] += n
+                                downloaded[i] = downloaded[i] + n.toLong()
                             }
                         }
                     }
