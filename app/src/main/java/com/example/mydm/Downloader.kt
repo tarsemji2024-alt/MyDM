@@ -105,7 +105,7 @@ class Downloader(
                             }
                         }
                     }
-                } catch (_: Exception) { /* इस हिस्से में दिक्कत: meta सेव है, दोबारा resume करें */ }
+                } catch (e: Exception) { /* इस हिस्से में दिक्कत: meta सेव है, दोबारा resume करें */ }
             }.also { it.start() }
         }
 
